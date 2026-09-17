@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Rofiq Ibrahim Natis</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eaeaea;
+            color: #111;
+            line-height: 1.5;
+        }
+
+        .cv {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 30px auto;
+            background: white;
+            padding: 35px 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* HEADER */
+        .header {
+            border-bottom: 2px solid #111;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #444;
+        }
+
+        /* LAYOUT */
+        .content {
+            display: grid;
+            grid-template-columns: 35% 65%;
+            gap: 35px;
+        }
+
+        .left {
+            border-right: 1px solid #ccc;
+            padding-right: 25px;
+        }
+
+        .right {
+            padding-left: 5px;
+        }
+
+        /* SECTION */
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #111;
+            padding-bottom: 6px;
+            margin-bottom: 13px;
+        }
+
+        /* CONTACT */
+        .contact p {
+            font-size: 12px;
+            margin-bottom: 8px;
+            word-break: break-word;
+        }
+
+        /* EDUCATION */
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item strong {
+            display: block;
+            font-size: 12.5px;
+        }
+
+        .education-item span {
+            font-size: 11px;
+            color: #555;
+        }
+
+        /* EXPERIENCE */
+        .experience-item {
+            margin-bottom: 17px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .experience-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 6px;
+            height: 6px;
+            background: #111;
+            border-radius: 50%;
+        }
+
+        .experience-item strong {
+            font-size: 12.5px;
+        }
+
+        .experience-item span {
+            display: block;
+            font-size: 11px;
+            color: #555;
+            margin-top: 2px;
+        }
+
+        /* SKILLS */
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 5px;
+            background: #ddd;
+        }
+
+        .skill-level {
+            height: 100%;
+            background: #111;
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            font-size: 10px;
+            color: #777;
+        }
+
+        /* PRINT */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                min-height: 297mm;
+            }
+        }
+
+        /* MOBILE */
+        @media screen and (max-width: 800px) {
+            .cv {
+                width: 95%;
+                min-height: auto;
+                margin: 10px auto;
+                padding: 25px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .left {
+                border-right: none;
+                border-bottom: 1px solid #ccc;
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+
+            .right {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>ROFIQ IBRAHIM NATIS</h1>
+        <p>Curriculum Vitae</p>
+    </header>
+
+    <div class="content">
+
+        <!-- KOLOM KIRI -->
+        <aside class="left">
+
+            <!-- KONTAK -->
+            <section class="section contact">
+                <h2 class="section-title">Kontak</h2>
+
+                <p>📞 0882 - 8955 - 7055</p>
+                <p>✉ rofiqibrhim@gmail.com</p>
+                <p>📍 Jembatan Lima, Jakarta Barat</p>
+            </section>
+
+            <!-- KEMAMPUAN -->
+            <section class="section">
+                <h2 class="section-title">Kemampuan</h2>
+
+                <div class="skill">
+                    <div class="skill-name">Manajemen Waktu</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Ketelitian dan Kerapian</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Fleksibilitas</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </section>
+
+        </aside>
+
+
+        <!-- KOLOM KANAN -->
+        <main class="right">
+
+            <!-- PENDIDIKAN -->
+            <section class="section">
+                <h2 class="section-title">Pendidikan</h2>
+
+                <div class="education-item">
+                    <strong>SDN Jembatan Lima 01</strong>
+                    <span>2013 - 2019</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>SMP Muhammadiyah 12</strong>
+                    <span>2019 - 2022</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>MAN 1 Jakarta</strong>
+                    <span>2022 - 2025</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>Universitas Islam Negeri Syarif Hidayatullah Jakarta</strong>
+                    <span>2025 - Sekarang</span>
+                </div>
+            </section>
+
+
+            <!-- PENGALAMAN -->
+            <section class="section">
+                <h2 class="section-title">Pengalaman</h2>
+
+                <div class="experience-item">
+                    <strong>Sekretaris IPM (Ikatan Pelajar Muhammadiyah)</strong>
+                    <span>2021 - 2022</span>
+                </div>
+
+                <div class="experience-item">
+                    <strong>Bendahara HIKMAL (Himpunan Keluarga Remaja Al-Khosyi'in)</strong>
+                    <span>2023 - 2024</span>
+                </div>
+
+                <div class="experience-item">
+                    <strong>Anggota OSIS MAN 1</strong>
+                    <span>2023 - 2024</span>
+                </div>
+
+                <div class="experience-item">
+                    <strong>Ketua Rohis / IDAMAN (Ikatan Da'i MAN 1 JKT)</strong>
+                    <span>2024 - 2025</span>
+                </div>
+
+                <div class="experience-item">
+                    <strong>Mengajar TPQ Al-Munawarah</strong>
+                    <span>2025</span>
+                </div>
+
+                <div class="experience-item">
+                    <strong>Mengajar Les Anak Sekolah Dasar</strong>
+                    <span>2025 - 2026</span>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        Curriculum Vitae — Rofiq Ibrahim Natis
+    </footer>
+
+</div>
+
+</body>
+</html>
